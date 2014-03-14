@@ -1,0 +1,65 @@
+{
+	"_comment1": "Valid terminals include: 'iTerm2'",
+	"_comment2": "Hosts will also be read from your ~/.ssh/config or /etc/ssh_config file, if available",
+	"_comment3": "For more information on how to configure, please see http://fitztrev.github.io/shuttle/",
+	"terminal": "iTerm",
+	"launch_at_login": false,
+	"hosts": [
+		{
+			"Work": [
+				{
+					"name": "dev.example.net",
+					"cmd": "ssh username@dev.example.net -p 3000"
+				},
+				{
+					"name": "staging.example.net",
+					"cmd": "ssh username@staging.example.net -p 3000"
+				},
+				{
+					"name": "production.example.net",
+					"cmd": "ssh username@example.net -p 3000"
+				},
+				{
+					"name": "主172.16.4.202",
+					"cmd": "ssh root@172.16.4.202"
+				},
+				{
+					"name": "从172.16.4.201",
+					"cmd": "ssh root@172.16.4.201"
+				},
+				{
+					"name": "从172.16.4.220",
+					"cmd": "ssh root@172.16.4.220"
+				}
+			]
+		},
+		{
+			"个人": [
+				{
+					"name": "虚拟机",
+					"cmd": "ssh root@192.168.169.148"
+				}
+			]
+		},
+		{
+			"巨龙在线": [
+				{
+					"name": "php1",
+					"cmd": "ssh root@192.168.4.104"
+				},
+				{
+					"name": "php2",
+					"cmd": "ssh root@192.168.4.105"
+				},
+				{
+					"name": "redis-1",
+					"cmd": "ssh root@192.168.4.108"
+				},
+				{
+					"name": "redis-2",
+					"cmd": "ssh root@192.168.4.109"
+				}
+			]
+		}
+	]
+}
